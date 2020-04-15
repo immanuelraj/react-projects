@@ -1,0 +1,74 @@
+.container {
+    min-height: 100vh;
+    padding: 10px 250px 10px 250px;
+    background-color: rgb(241, 217, 217);
+}
+.app-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-task{
+    height: 100px;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-task-title {
+    font-size: 20px;
+    padding-right: 20px;
+}
+.input-text{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.add-task-body {
+    font-size: 30px;
+    width: 70%;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.add-btn{
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    background-color: sandybrown;
+    float: right;
+}
+
+.list{
+    padding-top: 20px;
+    min-height: 100vh;
+    background-color: rgb(228, 173, 173);
+    
+}
+
+.box{
+    width: 40px; 
+    height: 40px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    width: 50%;
+    font-size: 20px;
+    color: rgb(182, 106, 56);
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.btn{
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    background-color: rgb(87, 184, 214);
+    float: right;
+}
