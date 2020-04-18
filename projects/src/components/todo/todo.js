@@ -43,27 +43,20 @@ export class Todo extends React.Component {
   render() {
     return(
       <div className='container'>
-        <h1 className='app-title'>To Do App</h1>
         <div className='add-task'>
-          <div className='add-task-title'>
-            <label>Add Items</label>
-          </div>
-          <div className='add-task-body'>
-            <input 
-              type='text'
-              className='input-text'
-              required
-              value={this.state.newItem}
-              onChange={e=> this.updateInput(e.target.value)}
-              placeholder='Write Todo...'>
-            </input>
-          </div>
-          <div className='add-task-button'>
-            <button
-            className='add-btn'
-            onClick={()=> this.addItem(this.state.newItem)}
-            disabled={!this.state.newItem.length}>Add</button>
-          </div>
+          <label className='task-title'>Add Items</label>
+          <input 
+            type='text'
+            className='input-text'
+            required
+            value={this.state.newItem}
+            onChange={e=> this.updateInput(e.target.value)}
+            placeholder='Write Todo...'>
+          </input>
+          <button
+          className='add-btn'
+          onClick={()=> this.addItem(this.state.newItem)}
+          disabled={!this.state.newItem.length}>Add</button>
         </div>
         <div className='list'>
           <ul>
@@ -76,7 +69,7 @@ export class Todo extends React.Component {
                   onChange={()=>{}}
                   className='box'/>
                   <h3>{item.value}</h3>
-                  <button className='btn' onClick={() => this.deleteItem(item.id)}>Delete</button>
+                  <button className='btn' onClick={() => this.deleteItem(item.id)}>Remove</button>
                 </li>
               );
             })};

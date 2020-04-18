@@ -1,43 +1,36 @@
 .container {
     min-height: 100vh;
-    padding: 10px 250px 10px 250px;
-    background-color: rgb(241, 217, 217);
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
 .app-title {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 .add-task{
+    font-size: 30px;
     height: 100px;
     background-color: salmon;
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
 }
 
-.add-task-title {
-    font-size: 20px;
-    padding-right: 20px;
+.task-title {
+    padding: 10px;
 }
 .input-text{
-    padding-top: 20px;
+    width: 50%;
+    padding: 10px;
     font-size: 20px;
-}
-.add-task-body {
-    font-size: 30px;
-    width: 70%;
-    background-color: white;
-    font-size: 16px;
-    padding-left: 10px;
 }
 
 .add-btn{
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px;
     font-size: 20px;
-    background-color: sandybrown;
-    float: right;
+    background-color: #ff9a9e;
 }
 
 .list{
@@ -63,12 +56,11 @@ h3 {
     font-size: 20px;
     color: rgb(182, 106, 56);
     background-color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 .btn{
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px;
     font-size: 20px;
     background-color: rgb(87, 184, 214);
-    float: right;
 }
