@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './todo.css'
 
-export class Todo extends React.Component {
+export class Todo extends Component {
 
   constructor(props){
     super(props);

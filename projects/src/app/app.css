@@ -1,0 +1,9 @@
+.app {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  padding: 10px;
+  border-radius: 10px;
+}
