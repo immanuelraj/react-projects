@@ -12,7 +12,7 @@ export class Todo extends Component {
   }  
 
   addItem(todovalue){
-    if(todovalue!=''){
+    if(todovalue!==''){
       const newItem = {
         id: Date.now(),
         value:todovalue,
@@ -69,7 +69,7 @@ export class Todo extends Component {
                   onChange={()=>{}}
                   className='box'/>
                   <h3>{item.value}</h3>
-                  <button className='btn' onClick={() => this.deleteItem(item.id)}>Remove</button>
+                  <button className='btn' onClick={this.deleteItem.bind(this, item.id)}>Remove</button>
                 </li>
               );
             })};
